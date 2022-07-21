@@ -1,0 +1,24 @@
+.floatingdiv {
+    justify-content: space-around;
+    z-index: 1.5;
+    display: flex;
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    align-items: center;
+    padding: 15px 39px 0px 0px ;
+    height: 4.5rem;
+    
+
+}
+
+.floatingdiv>span {
+    
+    margin-bottom: 20px;
+}
+
+.crown {
+    transform: scale(.50);
+    margin-bottom: 18px;
+}
+
