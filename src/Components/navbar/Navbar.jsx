@@ -10,9 +10,9 @@ const Navbar = () => {
             <div className="n-right">
                 <ul>
                     <li>Home</li>
-                    <li>Services</li>
-                    <li>Experience</li>
+                    <li>About</li>
                     <li>Portfolio</li>
+                    
                 </ul>
                 <button className="n-button">
                     Contact Us

@@ -1,0 +1,55 @@
+.services {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 67vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+}
+
+.awesome {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+.awesome-transition {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .awesome {
+      transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+  }
+
+.awesome > :nth-child(1) {
+    color: var(--second);
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    
+}
+
+.awesome > :nth-child(2) {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome > :nth-child(3) {
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;   
+}
+
+.s-button {
+    width: 9rem;
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}

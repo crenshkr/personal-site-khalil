@@ -2,12 +2,14 @@
     justify-content: space-around;
     z-index: 1.5;
     display: flex;
-    background-color: white;
+    background-color: var(--nu);
+    border: solid var(--third) 2px;
     box-shadow: var(--boxShadow);
     border-radius: 17px;
     align-items: center;
     padding: 15px 39px 0px 0px ;
     height: 4.5rem;
+    color: white;
     
 
 }

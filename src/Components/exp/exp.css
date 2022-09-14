@@ -1,0 +1,62 @@
+.exp {
+    height: 90vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.econtainer {
+        width: 80vw;
+        height: 80vh;
+        display:flex;
+        flex-direction: column;
+        position: relative;
+    }
+.eabout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eabout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.eabout> :nth-child(1) {
+        color: var(--second);
+        font-size: 2.5rem;
+        font-weight: bold;
+        
+        
+}
+.eabout> :nth-child(2) {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    
+}
+.eabout> :nth-child(3) {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: bold;
+    
+    
+}
+
+.e-bio {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+    justify-content: space-around;
+   
+    
+
+}

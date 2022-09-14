@@ -1,6 +1,12 @@
 :root
 {
+  --main: white;
+  --second: #c13572;
+  --third: #d341c9;
+  --opaque: rgba(255, 0, 255, 0.8);
+  --green: #03DAC5 ;
   --yellow: #F5C32C;
+  --nu: #121212;
     --orange : #FCA61F;
     --black : #242D49;
     --gray : #788097;
@@ -14,7 +20,7 @@
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);    
+    color: white;    
 }
 
 *{
@@ -24,6 +30,7 @@
 }
 body{
 margin:0;
+background-color: #121212;
 }
 
 .n-wrapper {
@@ -88,7 +95,7 @@ li {
 
 li:hover {
   cursor: pointer;
-  color: var(--orange);
+  color: var(--opaque);
 }
 
 button {
@@ -97,16 +104,18 @@ button {
   color: white;
   font-size:  16px;
   padding: 11px 26px 11px 26px;
-  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40 , 0.42);
+  background: linear-gradient(180deg, #c13572 26.71%, #d341c9 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(8, 68, 94, 0.42);
+  
 }
 
 /* todo-jump */
 button:hover {
   background: white;
   cursor: pointer;
-  color: var(--orange);
-  border: 1px solid var(--orange);
+  color: #c13572;
+  border: 1px solid #c13572;
+  
 }
 
 
