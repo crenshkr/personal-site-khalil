@@ -12,7 +12,7 @@ function Ecards() {
            
         </div>
         <div className='e-project'>
-            <span className='e-title'>Digital Product, Email Marketing template.</span>
+            <span className='e-title'>New Product, Email Marketing template.</span>
             <br/>
             <span className='e-detail'>Email template updates you on new music! A familiar design created with HTML, CSS and Sass. Discover upcoming artists with this responsive layout. </span>
         </div>
