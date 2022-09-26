@@ -4,26 +4,26 @@ import gitw from './../../img/gitwhite.png'
 import './ecards.css'
 
 
-function Ecards() {
+function Ecards({ title, detail, dest, siteImage}) {
   return (
-    <div className='ecards'>
-        <div className='e-icons'>
-            <img className='fold' src={folder} alt=""  style={{transform: "scale(0.1)", left: "5rem"}} />
+        <div className='ecards'>
+            <div className='e-icons'>
+                <a href={ dest }><img className='fold' src={folder} alt=""  style={{transform: "scale(0.1)", left: "5rem"}} /></a>
            
+            </div>
+            <div className='e-project'>
+                <span className='e-title'><a href={ dest } className='e-link'> { title } </a></span>
+                <br/>
+                <span className='e-detail'> { detail } </span>
+            </div>
+            <div className='lingos'>
+                <ul className='e-list'>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                </ul>
+            </div>
         </div>
-        <div className='e-project'>
-            <span className='e-title'>New Product, Email Marketing template.</span>
-            <br/>
-            <span className='e-detail'>Email template updates you on new music! A familiar design created with HTML, CSS and Sass. Discover upcoming artists with this responsive layout. </span>
-        </div>
-        <div className='lingos'>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Sass</li>
-            </ul>
-        </div>
-    </div>
   )
 }
 

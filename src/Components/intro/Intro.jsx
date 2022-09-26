@@ -1,8 +1,8 @@
 import React from 'react' 
 import './intro.css'
-import Github from './../../img/github.png'
-import LinkedIn from './../../img/linkedin.png'
-import Instagram from './../../img/instagram.png'
+import Github from './../../img/githubwhite.png'
+import LinkedIn from './../../img/linkedinwhite.png'
+import Twitter from './../../img/twitterwhite.png'
 import Vector1 from './../../img/Vector1.png'
 import Vector2 from './../../img/Vector2.png'
 import boy from './../../img/boy.png'
@@ -13,42 +13,37 @@ import FloatingDiv from '../floatingdiv/FloatingDiv'
 
 const Intro = () => {
     return (
-        <div className="intro">
+        <section className="intro" id='intro'>
             <div className="i-left">
                 <div className="i-name">
                     <span>Hi, I am</span>
                     <span>Khalil Crenshaw</span>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ea, magni, rerum velit maiores necessitatibus aut eum consequatur perferendis incidunt ex molestias rem recusandae itaque! Nobis rerum a beatae eum. Dolores provident blanditiis laborum mollitia ea recusandae aspernatur nesciunt officia veritatis laboriosam voluptatum velit sit sed harum explicabo, doloribus veniam.</span>
+                    <span>Front-End Web Developer with three years of self-Learning. Creates
+                        <br></br>
+                         design-forward UI/UX for clients to easily navigate on any device.
+                         <br></br>
+                          Remarkable ability in developing multi-page websites with SASS and React.
+                          <br></br> 
+                          Utilizes CSS Flexbox and Grid to build smooth layouts. Knowledge of deployment in
+                          <br></br>
+                           Netlify. Generates unique web content with Adobe Creative Suite, such as Photoshop 
+                           <br></br> 
+                           and Premier Pro. Based in Atlanta, Georgia.
+                        
+                        
+                        </span>
                 </div>
-                <button className='i-button'>Hire Me</button>
+                <button  className='i-button'><a href="https://linktr.ee/khalilcrenshawdev" className='abtn'>Hire Me</a></button>
                 <div className="i-icons">
-                    <img src={Github} alt="" />
-                    <img src={LinkedIn} alt="" />
-                    <img src={Instagram} alt="" />
+                    <a href='https://github.com/crenshkr'><img className='icon' src={Github} alt="" /></a>
+                    <a href='https://www.linkedin.com/in/khalil-crenshaw-2887a814a/'><img className='icon' src={LinkedIn} alt="" /></a>
+                    <a href='https://twitter.com/devcrenshaw'><img className='icon' src={Twitter} alt="" /></a>
                 </div>
             </div>    
-            <div className="i-right">
-                <img src={Vector1} alt="" />
-                <img src={Vector2} alt="" />
-                <img src={boy} alt="" />
-                <div style={{top: '4%', left: '58%' }}>
-                    <FloatingDiv image={crown} txt1="Web" txt2="Developer"/>
-                </div>
-                <div style={{top: '25.6rem', left: '-2rem' }}>
-                    <FloatingDiv image={thumbup} txt1="Best Code" txt2="Award"/>
-                </div>
-                <div className='blur' style={{ background: "rgb(238 210 255)" }}></div>
-                <div className='blur' style={{ 
-                    background: "rgb(238 210 255)",
-                    top: '17rem',
-                    width: '21rem',
-                    height: '11rem',
-                    left: '-9rem'
-                    
-                    }}></div>
-            </div>
             
-        </div>
+           
+            
+        </section>
     )
 }
 

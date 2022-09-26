@@ -11,7 +11,21 @@
     border: 7px solid var(--second);
 
     padding: 0px 26px 2rem 26px;
-    left: 20%
+    
+    transition: ease-in-out 0.3s;
+    
+}
+
+
+@media (max-width: 500px ) {
+    .cards {
+      left:0%
+    }
+  }
+
+a {
+  text-decoration: none;
+  color: #5290FD;
 }
 
 .card span:nth-of-type(2) {
@@ -19,10 +33,16 @@
     font-size: 16px;
 }
 
+
+
 .card > img {
     transform: scale(0.6);
     margin-bottom: -2rem;
 }
+
+
+
+
 
 .c-button {
     background: white;
@@ -36,6 +56,54 @@
 
 .cards {
     position: relative;
+    
 
 }
 
+@media (min-width: 850px ) {
+  .cards {
+    margin-top: 50px;
+    left: 15%;
+  }
+}
+
+@media (max-width: 850px ) {
+    #card1 {
+      margin-top: 50px;
+      margin-right: 20px;
+    }
+  }
+  @media (max-width: 850px ) {
+    #card2 {
+      margin-top: 80px;
+      margin-left:40px;
+    }
+  }
+
+  @media (max-width: 850px ) {
+    #card3 {
+      margin-top: 35px;
+      margin-left:25px;
+    }
+  }
+
+  
+  @media (max-width: 1600px ) {
+    #card1 {
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: 1600px ) {
+    #card2 {
+      margin-top: 80px;
+      margin-right: 2.4em;
+      
+    }
+  }
+
+  @media (max-width: 1600px ) {
+    #card3 {
+      margin-top: 50px;
+      margin-right: 1em;
+    }
+  }

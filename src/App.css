@@ -4,7 +4,7 @@
   --second: #c13572;
   --third: #d341c9;
   --opaque: rgba(255, 0, 255, 0.8);
-  --green: #03DAC5 ;
+  --green: #affff7 ;
   --yellow: #F5C32C;
   --nu: #121212;
     --orange : #FCA61F;
@@ -18,9 +18,11 @@
 }
 
 .App{
-    padding: 0.5rem 3.5rem;
-    overflow: hidden;
-    color: white;    
+    color: white;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 *{
@@ -35,13 +37,20 @@ background-color: #121212;
 
 .n-wrapper {
    height: 10vh;
+   width: 80vw;
    display: flex;
-   
-   
-   
 }
-  
 
+@media (max-width: 680px) {
+  .n-wrapper { width: 80vw; }   /* hide it elsewhere */
+}
+
+@media (max-width: 680px) {
+  .n-list > ul > li { font-size: .5em; }   /* hide it elsewhere */
+}
+
+
+{/*
 .n-left {
   display: flex;
   flex: 1;
@@ -49,7 +58,7 @@ background-color: #121212;
   gap: 2rem;
 
 }
-
+*/}
 .n-right {
   display: flex;
   flex: 1;
@@ -58,6 +67,14 @@ background-color: #121212;
   font-weight: 400;
   
 }
+
+@media (max-width: 680px) {
+  .n-right { 
+    flex:none;
+    width: 100%;
+  
+  }   /* hide it elsewhere */
+}
 .n-name {
   font-size: 1.4rem;
   font-weight: bold;
@@ -65,37 +82,39 @@ background-color: #121212;
 
 
 
-.n-list {
-  
-  flex: 10;
-}
 
-.n-list > ul {
-  display: flex;
-  gap: 2rem;
-  margin-right: 4rem;
-  
-  
-}
 
 ul{
   display: flex;
   
 
 }
+.link {
+  text-decoration: none;
+  color: white;
+}
 
-li {
+@media screen and (min-width: 300px) and (max-width: 680px) {
+  .nav-styles { margin-right: 0; }   /* hide it elsewhere */
+}
+
+.nav-styles {
   margin-right: 4rem;
   list-style: none;
   
   
 }
 
+.abtn {
+  text-decoration: none;
+  color: white;
+}
+
 
 
 li:hover {
   cursor: pointer;
-  color: var(--opaque);
+  color: var(--second);
 }
 
 button {
@@ -106,16 +125,24 @@ button {
   padding: 11px 26px 11px 26px;
   background: linear-gradient(180deg, #c13572 26.71%, #d341c9 99.36%);
   box-shadow: 0px 20px 24px 3px rgba(8, 68, 94, 0.42);
-  
+  transition: ease-in-out 0.3;
+  border: solid 2px #c13572;
 }
 
 /* todo-jump */
 button:hover {
-  background: white;
+  background: #8fe7df;
   cursor: pointer;
-  color: #c13572;
-  border: 1px solid #c13572;
+  
+  
   
 }
 
-
+@media (max-width: 680px) {
+  .nav-list{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }   /* hide it elsewhere */
+}

@@ -1,11 +1,44 @@
 .services {
-    padding: 0 3rem 0 3rem;
+    height: 160vh;
+    width: 100vw;
+    
     display: flex;
-    height: 67vh;
-    margin-bottom: 8rem;
-    margin-top: 9rem;
-    margin-bottom: 13rem;
+    flex-direction: column;
+    align-items: center;
+    
 }
+
+@media (max-width: 500px ) {
+    .services { 
+        height: 200vh;
+    }
+  }
+
+ 
+
+  @media (max-width: 850px ) {
+    .services {
+      
+      height: 200vh;
+    }
+  }
+
+
+.s-container {
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+@media (max-width: 850px ) {
+    .s-container {
+      flex-direction: column;
+      height: 140vh;
+    }
+  }
 
 .awesome {
     display:flex;
@@ -53,3 +86,11 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 500px ) {
+    .cards {
+      margin-left: 0rem;
+      margin-top: 3rem;
+    }
+  }
+

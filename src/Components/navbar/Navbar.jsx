@@ -1,25 +1,37 @@
-import React from 'react' 
+import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
-    return (
-        <div className="n-wrapper">
-            <div className="n-left">
-                <div className="n-name">Khalil</div>
-                <span>Toggle</span>
-            </div>
-            <div className="n-right">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Portfolio</li>
-                    
-                </ul>
-                <button className="n-button">
-                    Contact Us
-                </button>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="n-wrapper">
+      {/*<div className="n-left" id='l-div'>
+                <div className="n-name" id='l-content'>Khalil</div>
+                
+            </div> */}
+      <div className="n-right">
+        <ul className="nav-list">
+          <li className="nav-styles">
+            <Link to='#intro' smooth className="link">
+                About
+            </Link>
+          </li>
+          <li className="nav-styles">
+            <Link to='#exp' smooth className="link">
+                Portfolio
+            </Link>    
+          </li>
+          <li className="nav-styles">
+            <Link to='#services' smooth className="link">
+                Skills   
+            </Link>
+          </li>
+        </ul>
+        {/*<button  className="n-button" id='n-btn'><a href="https://linktr.ee/khalilcrenshawdev" className='abtn'>
+                    Contact
+                </a></button>*/}
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
